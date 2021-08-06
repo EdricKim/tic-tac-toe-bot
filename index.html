@@ -5,6 +5,43 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="grid"></div>
+        <h1>Tic Tac Toe</h1>
+        <div class = "center"><button onclick="resetBoard()">Reset game</button></div>
+        <div class = "centerText">Change difficulty here (It is on medium by default):
+            <div id="difficulty" class = "centerText">Current Difficulty: Medium</div>
+        </div>
+
+        <div class = "center">
+            <button class = "selected" onclick = "changeDifficulty('brainless')">Difficulty: Brainless</button>
+            <button class = "selected" onclick = "changeDifficulty('dumb')">Difficulty: Dumb</button>
+            <button class = "selected" onclick = "changeDifficulty('medium')">Difficulty: Medium</button>
+        </div>
+
+        <!-- The Modal -->
+        <div id="winScreenRed" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-contentRed">
+                <p>Red wins</p>
+                <button class = "close" onclick="closeModal()">Click to reset</button>
+            </div>
+        </div>
+
+        <div id="winScreenBlue" class="modal">
+
+            <div class="modal-contentBlue">
+                <p>Blue wins</p>
+                <button class = "close" onclick="closeModal()">Click to reset</button>
+            </div>
+        </div>
+
+        <div id="tieScreen" class="modal">
+
+            <div class="modal-contentTie">
+                <div id = "customTieText">You both lose.</div>
+                <button class = "closeTie" onclick="closeModal()">Click to reset</button>
+            </div>
+        </div>
+
     </body>
 </html>

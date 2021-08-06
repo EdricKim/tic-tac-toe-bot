@@ -4,6 +4,7 @@
     width: 500px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 .row
 {
@@ -23,59 +24,80 @@
     width: 100px;
     outline: 1px solid black;
 }
-.modal
+h1
 {
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
+  text-align: center;
+}
+.centerText
+{
+  text-align: center;
+}
+.center
+{
+  text-align: center;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
     left: 0;
-    background-color: rgba(0, 0, 0, .5);
-    display: none;
-}
-.modal-content
-{
-    height: 300px;
-    width: 500px;
-    margin:auto;
-    margin-top: 100px;
-    background-color: red;
-}
-.show
-{
-    display: block;
-}
-.modalText
-{
-    font-size: x-large;
-    text-align: center;
-}
-.close 
-{
-    position: relative;
-    color: rgb(0, 0, 0);
-    height: 30px;
-    width: 90px;
-    left: 400px;
-    top: 200px;
-    font-size: 14px;
-    font-weight: bold;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
-  .modalBlue
-{
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, .5);
-    display: none;
-}
-.modal-contentBlue
-{
-    height: 300px;
-    width: 500px;
-    margin:auto;
-    margin-top: 100px;
+  
+  /* Modal Content/Box */
+  .modal-contentRed {
+    background-color: #ff0000;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+    height: 25%;
+    text-align: center;
+    font-size: x-large;
+  }
+
+  /* Modal Content/Box */
+  .modal-contentBlue {
     background-color: blue;
-}
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+    height: 25%;
+    text-align: center;
+    font-size: x-large;
+  }
+
+   /* Modal Content/Box */
+   .modal-contentTie {
+    background-color: rgb(255, 255, 255);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+    height: 25%;
+    text-align: center;
+    font-size: x-large;
+  }
+  
+  /* The Close Button */
+  .close {
+    float: right;
+    position: relative;
+    bottom: -50px;
+    font-size: 12px;
+  }
+   
+  /* The Close Button */
+   .closeTie {
+    float: right;
+    position: relative;
+    bottom: -80px;
+    font-size: 12px;
+  }
